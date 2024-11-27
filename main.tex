@@ -1,0 +1,39 @@
+\documentclass[math,code]{amznotes}
+\setcounter{tocdepth}{2}  % Only show sections in the ToC
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{tabularx}
+\usepackage{float} % Needed for [H] placement specifier
+\usepackage{wrapfig} % Needed for wrapping figures
+
+\graphicspath{ {./images/} }
+\geometry{
+    a4paper,
+    headheight = 1.5cm
+}
+
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\theoremstyle{remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{remark}{Remark}
+\newtheorem{case}{Case}
+
+\begin{document}
+\fancyhead[L]{
+    Differential Equations for Engineering
+}
+\fancyhead[R]{
+    Lecture Notes
+}
+\tableofcontents
+
+\chapter{The Harmonic Oscillator}
+\section{Simple Harmonic Motion}
+
+
+\end{document}
